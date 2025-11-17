@@ -7,11 +7,11 @@ export const Infografia = () => {
         <section className="flex flex-col gap-5 items-center ">
 
             <p className="text-3xl font-momo text-pastelceleste">¿Qué son las EDA?</p>
-            <div className='grid grid-cols-3 justify-center items-center gap-10'>
-                <div className='flex justify-center'>
+            <div className='flex flex-col-reverse lg:grid md:grid-cols-3 justify-center items-center gap-10'>
+                <div className='flex justify-center items-center'>
                     <img src={foto} alt="Infografía" />
                 </div>
-                <div className="bg-pastelamarillo text-black text-mb font-lato text-justify p-8 col-span-2 rounded-2xl">
+                <div className="bg-pastelamarillo text-black text-mb font-lato text-justify p-8 md:col-span-2 rounded-2xl">
                     <p className=" text-xl">
                         Para nosotros es importante que sepas sobre las Enfermedades Diarreicas Agudas (EDA), ya que son una de las principales causas de morbilidad y mortalidad en niños menores de cinco años en todo el mundo.
                     </p>

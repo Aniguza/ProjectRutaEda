@@ -30,3 +30,16 @@ body {
   background-color: var(--color-fondo);
 
 }
+
+/* Estilos para la animación 3D de volteo */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}

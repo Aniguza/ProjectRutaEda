@@ -18,15 +18,28 @@ export const ComicSection = () => {
         <HTMLFlipBook
           width={500}
           height={700}
+          size="stretch"
+          minWidth={315}
+          maxWidth={800}
+          minHeight={400}
+          maxHeight={1200}
           showCover={false}
+          flippingTime={1000}
+          usePortrait={true}
+          startZIndex={0}
+          autoSize={true}
+          maxShadowOpacity={0.5}
+          showPageCorners={true}
+          disableFlipByClick={false}
           className="rounded-xl shadow-xl"
           useMouseEvents={true}
+          singlePage={true}       
         >
           {pages.map((img, index) => (
-            <div key={index} className="w-full h-full ">
+            <div key={index} className="w-full h-full">
               <img
                 src={img}
-                className="w-full h-full object-contain bg-pastelrojo border-3 border-white"
+                className="w-full h-full object-contain bg-pastelrojo border-4 border-white"
                 draggable="false"
               />
             </div>
@@ -35,4 +48,5 @@ export const ComicSection = () => {
       </div>
     </section>
   );
-}
+};
+
