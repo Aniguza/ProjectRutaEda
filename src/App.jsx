@@ -17,12 +17,11 @@ function App() {
         <div >
           <MainSection className="z-9999"/>
           <VideoSection className="z-9999" />
+          <ComicSection className="z-9999" />
           <div >
             {/* <img src={deco} alt="Decorative" className="absolute text-center right-50 w-240 " /> */}
           </div>
-            
         </div>
-        <ComicSection />
         <Infografia />
       </div>
     </div>

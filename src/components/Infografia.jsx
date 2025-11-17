@@ -40,10 +40,8 @@ export const Infografia = () => {
                                         style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
                                         src="https://view.genially.com/69156c640af34a09f80b9f33"
                                         type="text/html"
-                                        allowScriptAccess="always"
                                         allowFullScreen={true}
                                         scrolling="yes"
-                                        allowNetworking="all"
                                     ></iframe>
                                 </div>
                             </div>

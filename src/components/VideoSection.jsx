@@ -18,7 +18,7 @@ export const VideoSection = () => {
                                   
                                     width="100%"
                                     height="100%"
-                                    src="https://www.youtube.com/embed/KDy_6Ey7AYs?si=RylNHS7za5rY9IGV"
+                                    src="https://www.youtube.com/embed/KDy_6Ey7AYs?si=RylNHS7za5rY9IGV?rel=0&modestbranding=1"
                                     title="YouTube video player"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -36,7 +36,7 @@ export const VideoSection = () => {
                     </div>
 
                     {/* Right side - Character illustration */}
-                    <div className="flex justify-center lg:justify-end h-200">
+                    <div className="flex justify-center lg:justify-end h-full">
                         <div className="">
                             <img src={niño} alt="Character Illustration" className="w-80 h-auto" />
                         </div>
