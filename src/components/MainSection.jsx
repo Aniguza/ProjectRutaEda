@@ -55,7 +55,7 @@ export const MainSection = () => {
                                 <div>
                                     <h3 className="text-2xl  text-pastelceleste mb-2 font-momo">¿Quiénes somos?</h3>
                                     <p className="text-black text-mb font-lato text-justify">
-                                        Somos un grupo de estudiantes investigadores comprometidos con la promoción de la salud y la prevención de enfermedades. A través de nuestro proyecto “Ruta EDA”, buscamos informar y concientizar sobre las Enfermedades Diarreicas Agudas (EDAS), que continúan afectando a niños y familias sin acceso a agua potable. Nuestra investigación nos ha permitido comprender la importancia de la higiene, el saneamiento y el consumo de agua segura como medidas preventivas clave.
+                                        Somos un grupo de estudiantes investigadores comprometidos con la promoción de la salud y la prevención de enfermedades. A través de nuestro proyecto “Ruta EDA”, buscamos informar y concientizar sobre las Enfermedades Diarreicas Agudas (EDAS), que continúan afectando a niños y familias sin acceso a agua potable. Nuestra investigación nos ha permitido comprender la importancia de la higiene, el saneamiento y el consumo de agua segura como medidas preventivas clave. 
                                     </p>
                                 </div>
                             </div>
