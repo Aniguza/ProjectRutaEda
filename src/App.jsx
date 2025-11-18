@@ -8,8 +8,6 @@ import { Juego } from './components/Juego'
 import './App.css'
 import './index.css'
 
-import deco from './assets/images/flecha.png'
-
 function App() {
   return (
     <div className="w-full min-h-screen bg-fondo">
