@@ -76,3 +76,16 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* Estilos para el tooltip del navegador */
+.tooltip::after {
+  background-color: #FF6A6A;
+}
+
+.tooltip:before {
+  background-color: #FF6A6A !important;
+  color: white !important;
+  font-family: 'Lato', sans-serif !important;
+  border-radius: 0.5rem !important;
+  padding: 0.5rem 0.75rem !important;
+}

@@ -43,3 +43,16 @@ body {
 .backface-hidden {
   backface-visibility: hidden;
 }
+
+/* Ocultar barras de desplazamiento */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+
+

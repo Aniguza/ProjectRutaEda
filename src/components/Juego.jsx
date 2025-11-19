@@ -2,8 +2,9 @@ import React from 'react'
 
 export const Juego = () => {
   return (
-    <div className="my-20 flex justify-center">
-      <div className="w-full max-w-4xl">
+    <div className="my-20 flex flex-col justify-center items-center">
+      <h1 className="text-4xl font-momo text-pastelceleste mb-8 text-center">Es hora de jugar</h1>
+      <div className="w-full max-w-4xl ">
         <div className="relative w-full h-full" style={{ paddingBottom: '58.5%' }}>
           <iframe 
             frameBorder="0" 

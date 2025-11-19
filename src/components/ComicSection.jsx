@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 
 import img1 from "../assets/imagesComic/1.png";
@@ -16,6 +16,8 @@ const pages = [img1, img2, img3, img4, img5, img6, img7, img8];
 export const ComicSection = () => {
   const bookRef = useRef();
   const audioRef = useRef(new Audio(endFlipSound));
+  const [currentPage, setCurrentPage] = useState(0);
+  const [totalPages] = useState(pages.length);
 
   const playFlipSound = () => {
     audioRef.current.currentTime = 0;
@@ -30,14 +32,22 @@ export const ComicSection = () => {
     bookRef.current?.pageFlip()?.flipPrev();
   };
 
+  const isFirstPage = currentPage === 0;
+  const isLastPage = currentPage >= 6;
+
   return (
-    <section className="my-20">
-      <h1 className="text-5xl font-momo text-pastelceleste mb-8 text-center">Es hora de leer</h1>
-      <div className="w-full flex justify-center items-center py-10 bg-pastelamarillo gap-4">
+    <section className="my-20 overflow-hidden">
+      <h1 className="text-4xl font-momo text-pastelceleste mb-8 text-center">Es hora de leer</h1>
+      <div className="w-full flex justify-center items-center py-10 bg-pastelamarillo gap-4 overflow-hidden">
         {/* Botón anterior */}
         <button
           onClick={prevPage}
-          className="bg-pastelceleste hover:bg-pastelrojo text-white font-bold p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10 cursor-pointer ml-2"
+          disabled={isFirstPage}
+          className={`${
+            isFirstPage 
+              ? 'bg-gray-400 cursor-not-allowed opacity-50' 
+              : 'bg-pastelceleste hover:bg-pastelrojo hover:scale-110 cursor-pointer'
+          } text-white font-bold p-2 rounded-full shadow-lg transition-all duration-300 z-10 ml-2`}
           aria-label="Página anterior"
         >
           <svg 
@@ -75,6 +85,12 @@ export const ComicSection = () => {
               playFlipSound();
             }
           }}
+          onFlip={(e) => {
+            setCurrentPage(e.data);
+          }}
+          onChange={(e) => {
+            setCurrentPage(e.data);
+          }}
         >
           {pages.map((img, index) => (
             <div key={index} className="w-full h-full">
@@ -90,7 +106,12 @@ export const ComicSection = () => {
         {/* Botón siguiente */}
         <button
           onClick={nextPage}
-          className="bg-pastelceleste hover:bg-pastelrojo text-white font-bold p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10 cursor-pointer mr-2"
+          disabled={isLastPage}
+          className={`${
+            isLastPage 
+              ? 'bg-gray-400 cursor-not-allowed opacity-50' 
+              : 'bg-pastelceleste hover:bg-pastelrojo hover:scale-110 cursor-pointer'
+          } text-white font-bold p-2 rounded-full shadow-lg transition-all duration-300 z-10 mr-2`}
           aria-label="Página siguiente"
         >
           <svg 

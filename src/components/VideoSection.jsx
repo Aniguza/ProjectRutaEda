@@ -10,7 +10,7 @@ export const VideoSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left side - Video content */}
                     <div className='w-full lg:w-120'>
-                        <h2 className="text-4xl font-momo text-pastelrojo mb-8">Nombre del reportaje</h2>
+                        <h2 className="text-4xl font-momo text-pastelrojo mb-8">"El silencio de las EDAS"</h2>
 
                         <div className="bg-gray-300 rounded-lg overflow-hidden shadow-lg">
                             <div className="aspect-video bg-gray-400 flex items-center justify-center ">
