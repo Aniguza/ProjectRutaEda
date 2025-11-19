@@ -9,7 +9,7 @@ export const Infografia = () => {
             <p className="text-3xl font-momo text-pastelceleste">¿Qué son las EDAS?</p>
             <div className='flex flex-col-reverse lg:grid md:grid-cols-3 justify-center items-center gap-10'>
                 <div className='flex justify-center items-center'>
-                    <img src={foto} alt="Infografía" />
+                    <img src={foto} alt="Infografía" width="240px"/>
                 </div>
                 <div className="bg-pastelamarillo text-black text-mb font-lato text-justify p-8 md:col-span-2 rounded-2xl">
                     <p className=" text-xl">

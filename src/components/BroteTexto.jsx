@@ -1,4 +1,5 @@
 import React from 'react'
+import foto from '../assets/images/leyendo.png';
 
 export const BroteTexto = () => {
     return (
@@ -22,7 +23,7 @@ export const BroteTexto = () => {
                             Las autoridades de salud recomiendan mantener al día la vacunación contra el rotavirus, reforzar la higiene en el hogar y garantizar una adecuada manipulación de alimentos. También insisten en fortalecer la vigilancia epidemiológica y la capacidad de respuesta del primer nivel de atención para prevenir complicaciones y reducir el impacto de una enfermedad que puede controlarse con medidas oportunas.
                         </p>
                     </div>
-                    <img src="/src/assets/images/leyendo.png" alt="Leyendo" className="w-44 h-auto rounded-lg" />
+                    <img src={foto} alt="Leyendo" className="w-44 h-auto rounded-lg" />
                 </div>
             </div>
         </section>
